@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Configuración de Google Maps</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, Roboto, Arial, sans-serif;
+  }
+
+  .container {
+    text-align: center;
+  }
+
+  .icon-button {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 1px solid #2a2a2a;
+    transition: transform 0.15s ease, background-color 0.15s ease;
+    margin: 0 auto;
+  }
+
+  .icon-button:active {
+    transform: scale(0.92);
+    background-color: #262626;
+  }
+
+  .icon-button img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .label {
+    color: #888888;
+    font-size: 13px;
+    margin-top: 12px;
+    letter-spacing: 0.2px;
+  }
+</style>
+</head>
+<body>
+
+  <div class="container">
+    <a class="icon-button" href="intent://com.google.android.apps.maps/#Intent;action=android.settings.APPLICATION_DETAILS_SETTINGS;data=package:com.google.android.apps.maps;end" aria-label="Abrir configuración de Google Maps">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a9/Google_Maps_icon_%282020%29.svg" alt="Google Maps">
+    </a>
+    <div class="label">Configuración de Google Maps</div>
+  </div>
+
+</body>
+</html>
